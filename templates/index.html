@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<body>
+  <div class="container">
+    <h1>Image Captioning App</h1>
+    <p>Upload an image to generate a detailed caption.</p>
+    <form
+      action="/upload"
+      method="post"
+      enctype="multipart/form-data"
+      class="upload-form"
+    >
+      <div class="form-group">
+        <input type="file" id="image" name="image" accept="image/*" required />
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Upload and Generate Caption" />
+      </div>
+    </form>
+  </div>
+</body>
+
+{% endblock %}

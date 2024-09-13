@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-optical-sizing: auto;
+  margin: 2em;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  color: #343a40;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+a {
+  display: inline-block;
+  margin-top: 1em;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container for Centering Content */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.upload-form {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+input[type="file"],
+input[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="file"] {
+  margin-bottom: 1em;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+  padding: 0.5em 1.5em;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Caption and Error Styling */
+.caption-box {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Back Link Styling */
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+  body {
+    margin: 1em;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  form {
+    padding: 1.5em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  input[type="submit"] {
+    font-size: 0.9em;
+    padding: 0.4em 1em;
+  }
+}
