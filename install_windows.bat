@@ -25,12 +25,15 @@ pip install sentencepiece
 pip install opencv-python
 pip install accelerate
 
-echo installing triton 3
 
+echo installing triton 3
 pip install https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/triton-2.1.0-cp310-cp310-win_amd64.whl --upgrade
 
-echo installing requirements
 
+echo Installing required packages from requirements.txt...
+pip install -r requirements.txt
+
+echo installing requirements
 pip install https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/deepspeed-0.11.2_cuda121-cp310-cp310-win_amd64.whl --upgrade
 pip install gradio
 
